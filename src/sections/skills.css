@@ -1,0 +1,450 @@
+/* Skills section ki styling. Alag file hai, taaki index.css ko chhedna na pade.
+
+.toolstack-section {
+  --accent: #ff7a1a;
+  --surface-chip: #1c1c21;
+
+  /* keycap ke letters ke 10 rang (1 se 10, phir repeat) *
+  --element-1: #ff8a3d;
+  --element-2: #5b8cff;
+  --element-3: #4ade80;
+  --element-4: #fbbf24;
+  --element-5: #a78bfa;
+  --element-6: #2dd4bf;
+  --element-7: #fb7185;
+  --element-8: #38bdf8;
+  --element-9: #a3e635;
+  --element-10: #f472b6;
+
+  padding-block: 5rem;
+  width: 100%;
+}
+
+.toolstack-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .toolstack-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.toolstack-subtitle {
+  color: #afb0b6;
+  max-width: 34rem;
+  margin-bottom: 2rem;
+}
+
+/* ---------- keycap clusters ---------- *
+
+.toolstack-clusters {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 2.25rem 3rem;
+  justify-content: start;
+}
+
+@media (max-width: 760px) {
+  .toolstack-clusters {
+    grid-template-columns: max-content;
+  }
+}
+
+.toolstack-cluster {
+  display: grid;
+  grid-template-columns: repeat(3, 5.5rem);
+  gap: 0.6rem;
+  align-content: start;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+@media (max-width: 440px) {
+  .toolstack-cluster {
+    grid-template-columns: repeat(3, 4.5rem);
+  }
+}
+
+.toolstack-cluster.is-dimmed {
+  opacity: 0.25;
+  filter: grayscale(1);
+}
+
+.toolstack-cluster.is-highlighted .toolstack-key {
+  border-color: var(--accent);
+}
+
+.toolstack-key {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.6rem;
+  background: #0e0e10;
+  border: 1px solid #1c1c21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.toolstack-key:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.toolstack-key-index {
+  position: absolute;
+  top: 0.35rem;
+  left: 0.5rem;
+  font-size: 0.65rem;
+  color: #62646c;
+}
+
+.toolstack-key-label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.toolstack-key-name {
+  margin-top: 0.3rem;
+  padding-inline: 0.25rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #afb0b6;
+}
+
+/* hover karne par logo dikhta hai *
+.toolstack-key-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(14, 14, 16, 0.92);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.toolstack-key:hover .toolstack-key-overlay {
+  opacity: 1;
+}
+
+.toolstack-key-overlay img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* ---------- filter buttons ---------- *
+
+.toolstack-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.toolstack-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #1c1c21;
+  background: transparent;
+  color: #afb0b6;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.toolstack-filter-btn:hover {
+  color: #ffffff;
+}
+
+.toolstack-filter-btn.is-active {
+  color: #ffffff;
+  background: #1c1c21;
+  border-color: #3a3a49;
+}
+
+.toolstack-filter-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #3a3a49;
+}
+
+.toolstack-filter-btn.is-active .toolstack-filter-dot {
+  background: var(--accent);
+}
+
+/* ---------- circular progress ---------- *
+
+.toolstack-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 1.5rem;
+  justify-items: center;
+}
+
+.circular-progress-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.circular-progress {
+  position: relative;
+}
+
+.circular-progress-center {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.circular-progress-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.circular-progress-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #afb0b6;
+} */
+
+
+/* Skills section ki styling. Alag file hai, taaki index.css ko chhedna na pade. */
+
+.toolstack-section {
+  --accent: #ff7a1a;
+  --surface-chip: #1c1c21;
+
+  /* keycap ke letters ke 10 rang (1 se 10, phir repeat) */
+  --element-1: #ff8a3d;
+  --element-2: #5b8cff;
+  --element-3: #4ade80;
+  --element-4: #fbbf24;
+  --element-5: #a78bfa;
+  --element-6: #2dd4bf;
+  --element-7: #fb7185;
+  --element-8: #38bdf8;
+  --element-9: #a3e635;
+  --element-10: #f472b6;
+
+  padding-block: 3rem;
+  width: 100%;
+}
+
+.toolstack-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .toolstack-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.toolstack-subtitle {
+  color: #afb0b6;
+  max-width: 34rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ---------- filter buttons ---------- */
+
+.toolstack-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.75rem;
+}
+
+.toolstack-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #1c1c21;
+  background: transparent;
+  color: #afb0b6;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.toolstack-filter-btn:hover {
+  color: #ffffff;
+}
+
+.toolstack-filter-btn.is-active {
+  color: #ffffff;
+  background: #1c1c21;
+  border-color: #3a3a49;
+}
+
+.toolstack-filter-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #3a3a49;
+}
+
+.toolstack-filter-btn.is-active .toolstack-filter-dot {
+  background: var(--accent);
+}
+
+/* ---------- keycap clusters ---------- */
+
+.toolstack-clusters {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 1.5rem 2.5rem;
+  justify-content: start;
+}
+
+@media (max-width: 760px) {
+  .toolstack-clusters {
+    grid-template-columns: max-content;
+  }
+}
+
+.toolstack-cluster {
+  display: grid;
+  grid-template-columns: repeat(3, 4.75rem);
+  gap: 0.6rem;
+  align-content: start;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+@media (max-width: 440px) {
+  .toolstack-cluster {
+    grid-template-columns: repeat(3, 4.25rem);
+  }
+}
+
+.toolstack-cluster.is-dimmed {
+  opacity: 0.25;
+  filter: grayscale(1);
+}
+
+.toolstack-cluster.is-highlighted .toolstack-key {
+  border-color: var(--accent);
+}
+
+.toolstack-key {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.6rem;
+  background: #0e0e10;
+  border: 1px solid #1c1c21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.toolstack-key:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.toolstack-key-index {
+  position: absolute;
+  top: 0.35rem;
+  left: 0.5rem;
+  font-size: 0.65rem;
+  color: #62646c;
+}
+
+.toolstack-key-label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.toolstack-key-name {
+  margin-top: 0.3rem;
+  padding-inline: 0.25rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #afb0b6;
+}
+
+/* hover karne par logo dikhta hai */
+.toolstack-key-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(14, 14, 16, 0.92);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.toolstack-key:hover .toolstack-key-overlay {
+  opacity: 1;
+}
+
+.toolstack-key-overlay img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* ---------- circular progress ---------- */
+
+.toolstack-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 1.5rem;
+  justify-items: center;
+}
+
+.circular-progress-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.circular-progress {
+  position: relative;
+}
+
+.circular-progress-center {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.circular-progress-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.circular-progress-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #afb0b6;
+}

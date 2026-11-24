@@ -1,0 +1,84 @@
+.site-footer {
+  --accent: #ff7a1a;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 4.75rem; /* contact.css mein --footer-h isi ke barabar hai */
+  padding-block: 0.9rem;
+  border-top: 1px solid #1c1c21;
+  background: #050507;
+}
+
+.site-footer-inner {
+  width: 100%;
+}
+
+.site-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-footer-credit {
+  margin: 0;
+  color: #afb0b6;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.site-footer-credit strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.site-footer-dot {
+  margin-inline: 0.6rem;
+  color: var(--accent);
+}
+
+.site-footer-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.site-footer-btn {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #1c1c21;
+  border-radius: 0.65rem;
+  background: #0e0e10;
+  color: #afb0b6;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.site-footer-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 8px 22px -10px rgba(255, 122, 26, 0.5);
+  transform: translateY(-3px);
+}
+
+.site-footer-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  .site-footer {
+    padding-block: 1.25rem;
+  }
+
+  .site-footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

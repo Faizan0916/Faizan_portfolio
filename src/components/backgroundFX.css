@@ -1,0 +1,60 @@
+.fx-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1; /* sab content ke peeche */
+  pointer-events: none;
+  animation: fx-fade-in 0.9s ease both;
+}
+
+.fx-canvas canvas {
+  display: block;
+}
+
+@keyframes fx-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fx-toggle {
+  position: fixed;
+  top: 6.25rem;
+  right: 1.5rem;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  width: 2.9rem;
+  height: 2.9rem;
+  border: 1px solid #1c1c21;
+  border-radius: 0.8rem;
+  background: rgba(14, 14, 16, 0.85);
+  backdrop-filter: blur(8px);
+  color: #afb0b6;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease,
+    transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fx-toggle:hover {
+  color: #ffffff;
+  border-color: #3a3a49;
+  transform: translateY(-2px);
+}
+
+.fx-toggle.is-on {
+  color: #ff7a1a;
+  border-color: #ff7a1a;
+  background: rgba(255, 122, 26, 0.1);
+  box-shadow: 0 8px 24px -10px rgba(255, 122, 26, 0.6);
+}
+
+.fx-toggle:focus-visible {
+  outline: 2px solid #ff7a1a;
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .fx-toggle {
+    top: 5rem;
+    right: 1rem;
+  }
+}

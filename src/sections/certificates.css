@@ -1,0 +1,234 @@
+/* Certificates section ki styling. Alag file hai, index.css ko chhedna nahi padega. */
+
+.certificates-section {
+  --accent: #ff7a1a;
+
+  width: 100%;
+  box-sizing: border-box;
+  padding-block: 6rem 3rem;
+}
+
+/* Desktop: certificates ek poori screen le, next section niche na dikhe */
+@media (min-width: 901px) {
+  .certificates-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .certificates-section > div {
+    width: 100%;
+  }
+}
+
+.certificates-layout {
+  display: grid;
+  grid-template-columns: 16rem minmax(0, 1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .certificates-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ---------- sidebar filters ---------- */
+
+.cert-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+@media (max-width: 900px) {
+  .cert-sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cert-sidebar .head-text {
+    width: 100%;
+  }
+}
+
+.cert-sidebar-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.6rem;
+  background: transparent;
+  color: #62646c;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.cert-sidebar-btn:hover {
+  color: #ffffff;
+}
+
+.cert-sidebar-btn.is-active {
+  background: #1c1c21;
+  color: #ffffff;
+}
+
+.cert-sidebar-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #3a3a49;
+  flex-shrink: 0;
+}
+
+.cert-sidebar-btn.is-active .cert-sidebar-dot {
+  background: var(--accent);
+}
+
+/* ---------- cards ---------- */
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  background: #0e0e10;
+  border: 1px solid #1c1c21;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.cert-card-image-wrap {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  display: grid;
+  place-items: center;
+  background: #1c1c21;
+  overflow: hidden;
+}
+
+.cert-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.cert-card-image-placeholder {
+  color: #62646c;
+}
+
+.cert-badge-pill {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: #000000;
+  color: #ffffff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cert-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem;
+}
+
+.cert-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.cert-card-issuer {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.cert-card-description {
+  font-size: 0.9rem;
+  color: #afb0b6;
+}
+
+.cert-card-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #1c1c21;
+}
+
+.cert-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  color: #afb0b6;
+  transition: color 0.2s ease;
+}
+
+a.cert-link-btn:hover {
+  color: #ffffff;
+}
+
+/* ---------- pagination ---------- */
+
+.cert-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.cert-page-number,
+.cert-page-arrow {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #1c1c21;
+  background: transparent;
+  color: #afb0b6;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.cert-page-number:hover,
+.cert-page-arrow:hover:not(:disabled) {
+  color: #ffffff;
+}
+
+.cert-page-number.is-active {
+  background: #1c1c21;
+  border-color: #3a3a49;
+  color: #ffffff;
+}
+
+.cert-page-arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
