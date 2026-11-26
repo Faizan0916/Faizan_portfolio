@@ -10,6 +10,7 @@ import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
 import BackgroundFX from './components/BackgroundFX.jsx'
 
+
 const App = () => {
   return (
     <main className='max-w-7xl mx-auto c-space'>

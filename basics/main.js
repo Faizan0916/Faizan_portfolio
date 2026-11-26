@@ -1,4 +1,3 @@
-
 import * as THREE from 'three';
 
 // 1- Create the scene

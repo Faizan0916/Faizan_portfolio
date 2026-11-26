@@ -1,7 +1,7 @@
 export const journey = [
-  { year: 2022, title: 'Started Coding',     desc: 'Learned HTML, CSS and JavaScript.',      x: 150, y: 480 },
-  { year: 2023, title: 'First Projects',     desc: 'Built small React apps.',                x: 345, y: 380 },
-  { year: 2024, title: 'Full-Stack',         desc: 'Learned Node, Express and MongoDB.',     x: 550, y: 280 },
-  { year: 2025, title: 'Real-World Work',    desc: 'Worked on real projects and teams.',     x: 755, y: 180 },
-  { year: 2026, title: 'Today',              desc: 'Building my portfolio, exploring AI/ML.', x: 960, y: 80 },
+  { year: 2022,  title: 'JEE Preparation',      desc: 'Started JEE prep alongside school.',                           x: 150, y: 480 },
+  { year: 2024,  title: 'B.Tech Begins',        desc: 'Joined CSE (Data Science) at JMI and wrote my first code.',    x: 345, y: 380 },
+  { year: 2025,  title: 'DSA + Development',    desc: 'Started DSA and web development.',                             x: 550, y: 280 },
+  { year: 2026,  title: 'SIH & Team Projects',  desc: 'Took part in SIH, hackathons and team projects.',              x: 755, y: 180 },
+  { year: 'Now', title: 'Building & Shipping',  desc: 'Portfolio, Trendora e-commerce store and many small to mid-size projects.', x: 960, y: 80 },
 ];
