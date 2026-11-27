@@ -170,5 +170,14 @@ export const certificates = [
   image: '/certificates/figma.png',
   link: 'https://udemy-certificate.s3.amazonaws.com/image/UC-354eca5f-9cf6-49b7-8747-42657cd9059d.jpg',
 },
+{
+  id: 4,
+  title: 'Smart Campus Hackathon (Certificate of Participation)',
+  issuer: 'CSTC, South Asian University',
+  year: 2026,
+  category: 'hackathons',
+  image: '/certificates/smart-campus-hackathon.jpg',
+  link: 'c:\Users\Faizan Ahmad Ansari\Downloads\smart-campus-hackathon.jpg.jpg',
+},
 
 ];
