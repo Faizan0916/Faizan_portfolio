@@ -42,7 +42,7 @@ const CATEGORIES = [
       { label: 'Py', name: 'python', logo: 'python' },
       { label: 'Pd', name: 'pandas', logo: 'pandas' },
       { label: 'Np', name: 'numpy', logo: 'numpy' },
-      { label: 'Mp', name: 'matplotlib', logo: 'null' },
+      { label: 'Mp', name: 'matplotlib', logo: null },
       { label: 'Sk', name: 'scikit-learn', logo: 'scikitlearn' },
       { label: 'Oc', name: 'opencv', logo: 'opencv' },
     ],
@@ -52,7 +52,7 @@ const CATEGORIES = [
     label: 'digital design',
     items: [
       { label: 'Fg', name: 'figma', logo: 'figma' },
-      { label: 'Cv', name: 'canva', logo: 'null' },
+      { label: 'Cv', name: 'canva', logo: null },
       { label: 'Fr', name: 'framer', logo: 'framer' },
     ],
   },
