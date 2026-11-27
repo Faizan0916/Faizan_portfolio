@@ -5,7 +5,7 @@
 
   width: 100%;
   box-sizing: border-box;
-  padding-block: 6rem 3rem;
+  padding-block: 6rem 3rem; /* upar ki 6rem fixed navbar ke neeche jagah chhodti hai */
 }
 
 /* Desktop: certificates ek poori screen le, next section niche na dikhe */
@@ -88,12 +88,12 @@
   background: var(--accent);
 }
 
-/* ---------- cards ---------- */
+/* ---------- cards (compact: 2 x 2 ek screen par) ---------- */
 
 .certs-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 @media (max-width: 700px) {
@@ -113,7 +113,8 @@
 
 .cert-card-image-wrap {
   position: relative;
-  aspect-ratio: 16 / 10;
+  height: 12rem; /* chhoti fixed height. Chhota chahiye to 10rem, bada chahiye to 14rem */
+  flex-shrink: 0;
   display: grid;
   place-items: center;
   background: #1c1c21;
@@ -149,20 +150,26 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 0.5rem;
-  padding: 1.25rem;
+  gap: 0.35rem;
+  padding: 1rem 1.25rem 1.1rem;
 }
 
 .cert-card-title {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   line-height: 1.3;
   color: #ffffff;
+  /* lamba title 2 line mein hi kat jaye */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .cert-card-issuer {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--accent);
 }
 
@@ -175,7 +182,7 @@
   display: flex;
   justify-content: center;
   margin-top: auto;
-  padding-top: 1rem;
+  padding-top: 0.7rem;
   border-top: 1px solid #1c1c21;
 }
 
@@ -184,7 +191,7 @@
   align-items: center;
   gap: 0.4rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #afb0b6;
   transition: color 0.2s ease;
 }
@@ -200,7 +207,7 @@ a.cert-link-btn:hover {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .cert-page-number,

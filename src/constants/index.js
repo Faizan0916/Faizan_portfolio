@@ -143,13 +143,32 @@ cubePosition: isSmall
 
 
 export const certificates = [
-  { 
+  {
     id: 1,
-    title: 'Apne certificate ka naam',
+    title: 'Learn C++ Programming -Beginner to Advance- Deep Dive in C++',   // jaisa certificate par likha hai
+    issuer: 'Udemy',
+    year: 2026,                                    // certificate par jo saal hai
+    category: 'softwareDev',
+    image: '/certificates/cpp.png',
+    link: 'https://udemy-certificate.s3.amazonaws.com/image/UC-29d0bb78-af3c-406b-b670-f9a70b42793c.jpg',   // Udemy ka certificate link
+  },
+  {
+    id: 2,
+    title: 'Mastering Data Structures & Algorithms using C and C++',
     issuer: 'Udemy',
     year: 2026,
-    category: 'webDev',          // webDev, softwareDev, aiMl ya hackathons
-    image: '/certificates/fullstack.png',
-    link: 'https://certificate-ka-link.com',   // nahi hai to '' likho
+    category: 'softwareDev',
+    image: '/certificates/dsa.png',
+    link: 'https://udemy-certificate.s3.amazonaws.com/image/UC-53f770f1-2b6e-4bba-b9c3-a910f31a12d9.jpg',
   },
+  {
+  id: 3,
+  title: 'Learn Figma: UI/UX Design Masterclass From Beginner to Pro',
+  issuer: 'Udemy',
+  year: 2026,                     
+  category: 'design',
+  image: '/certificates/figma.png',
+  link: 'https://udemy-certificate.s3.amazonaws.com/image/UC-354eca5f-9cf6-49b7-8747-42657cd9059d.jpg',
+},
+
 ];

@@ -11,6 +11,7 @@ const CERT_CATEGORIES = [
   { key: 'webDev', label: 'web development' },
   { key: 'softwareDev', label: 'software development' },
   { key: 'aiMl', label: 'ai & ml' },
+  { key: 'design', label: 'design' },
   { key: 'hackathons', label: 'hackathons' },
 ]
 
